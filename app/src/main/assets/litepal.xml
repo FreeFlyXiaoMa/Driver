@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<litepal>
+    <dbname value="JourneyList"></dbname>
+    <version value="1"></version>//数据库第一次更新
+    <list>
+        <mapping class="com.junjun.drivertest.entity.JourneyEntity"></mapping>
+        <mapping class="com.junjun.drivertest.entity.BasicDriverInformation"></mapping>
+    </list>
+</litepal>

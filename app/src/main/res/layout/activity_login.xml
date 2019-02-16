@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/icon" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/laladache"
+            android:textColor="#cded12"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <EditText
+        android:id="@+id/et_driverName"
+        style="@style/Custom_EditText"
+        android:layout_width="310dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:hint="姓名"
+        android:inputType="textPersonName"
+        android:textColorHint="#c2aeae" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <EditText
+        android:id="@+id/et_carType"
+        style="@style/Custom_EditText"
+        android:layout_width="310dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:hint="车型"
+        android:inputType="textPersonName"
+        android:textColorHint="#c2aeae" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <EditText
+        android:id="@+id/et_driverLicense"
+        style="@style/Custom_EditText"
+        android:layout_width="310dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:hint="车牌号"
+        android:inputType="textPersonName"
+        android:textColorHint="#c2aeae" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <EditText
+        android:id="@+id/et_phone"
+        style="@style/Custom_EditText"
+        android:layout_width="310dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        android:textColorHint="#c2aeae" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_code"
+            style="@style/Custom_EditText"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            android:hint="@string/security_code"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textColorHint="#c2aeae" />
+
+        <Button
+            android:id="@+id/btn_get_code"
+            style="@style/Custom_Button"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:text="@string/get_security_code" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/Custom_Button"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="@string/login" />
+</LinearLayout>

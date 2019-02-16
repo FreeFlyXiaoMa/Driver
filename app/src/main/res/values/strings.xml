@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">叫车软件_司机端</string>
+    <string name="receive">接单</string>
+    <string name="check_order">查看派单</string>
+    <string name="laladache">叫车软件_司机端</string>
+    <string name="phone_number">手机号</string>
+    <string name="security_code">验证码</string>
+    <string name="get_security_code">获取验证码</string>
+    <string name="login">登录</string>
+
+    <string name="orders">订单</string>
+    <string name="wallet">钱包</string>
+    <string name="server">客服</string>
+    <string name="setting">设置</string>
+</resources>

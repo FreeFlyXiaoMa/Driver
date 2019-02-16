@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<com.baidu.mapapi.map.MapView
+    android:id="@+id/baidumap"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</com.baidu.mapapi.map.MapView>
+    <Button
+        android:id="@+id/btn_receive"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        style="@style/Custom_Button"
+        android:text="@string/receive"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="20dp"/>
+
+    <!--司机接单后显示乘客详细信息，同时进行导航-->
+    <LinearLayout
+        android:id="@+id/ll_passenger_detail"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_gravity="top"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:src="@mipmap/icon_user_circle"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="接单乘客"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_call"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/icon_call"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#808080"
+        />
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="您距离乘客："
+                android:textSize="18sp"
+                />
+            <TextView
+                android:id="@+id/tv_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFD700"
+                android:text="1.1"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M"
+                android:textSize="18sp"
+                android:layout_marginLeft="5dp"
+                />
+        <Button
+            android:id="@+id/btn_main_menu"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            style="@style/Custom_Button"
+            android:layout_marginLeft="40dp"
+            android:text="乘客已上车"
+            />
+    </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

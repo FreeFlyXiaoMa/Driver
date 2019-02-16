@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="附近暂时没有乘客乘车"
+        android:textSize="26sp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        />
+    <ListView
+        android:id="@+id/lv_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#1b90e4"
+        android:dividerHeight="2dp">
+
+    </ListView>
+</LinearLayout>
